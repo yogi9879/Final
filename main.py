@@ -7,7 +7,7 @@ def hello_world():
 
 @app.route('/hello')
 def hello_world1():
-  return  render_template("frontpage")
+  return  render_template("frontpage.html")
 
 
 
