@@ -1,5 +1,4 @@
 Flask==0.12.1
 numpy==1.11.3
-blas
-atlas
+lapack
 scipy==0.13.3
