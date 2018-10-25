@@ -7,7 +7,7 @@ def hello_world():
 
 @app.route('/hello')
 def hello_world():
-  return 'Hey its Python application!
+  return 'Hey its Python application!'
 
 if __name__ == '__main__':
   app.run()
