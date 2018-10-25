@@ -2,6 +2,7 @@ from flask import Flask,render_template, request
 app = Flask(__name__)
 import sub
 import numpy
+import scklearn
 
 
 @app.route('/')
