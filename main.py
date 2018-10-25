@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask,render_template, request
 app = Flask(__name__)
 
 @app.route('/')
@@ -7,7 +7,7 @@ def hello_world():
 
 @app.route('/hello')
 def hello_world1():
-  return 'Hey its Python Ffflask application!'
+  return  render_template("frontpage")
 
 
 
