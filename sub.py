@@ -34,7 +34,7 @@ def Model():
 	sc_y = StandardScaler()
 	#test = sc_X.fit_transform(test)
 	dataset = sc_y.fit_transform(dataset)
-
+	
 
 	dataset=pd.DataFrame(dataset)
 	correlation=dataset.corr(method="pearson")
@@ -50,8 +50,8 @@ def Model():
 
 
 	accuracies_train = cross_val_score(estimator =svr_reg , X = train_x, y = train_y, cv = 10)
-
+	a=svr_reg.score(train_x,train_y)
 	#y_lpredict=svr_reg.predict(test)
 	
-	return accuracies_train 
+	return a
 
