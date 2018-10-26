@@ -15,7 +15,7 @@ def hello_world():
 @app.route('/hello', methods = ['POST','GET'])
 def hello_world1():
   if request.method == 'POST':
-    f= = request.files['file']
+    #f= = request.files['file']
   
     return  render_template("frontpage.html")
 
