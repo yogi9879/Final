@@ -26,7 +26,7 @@ def hello_world1():
         dataset =pd.read_csv('train.csv')
         f.save(secure_filename(f.filename))
         abc=sub.Model()
-        return 'file uploaded successfully'
+        return abc
       
 
 if __name__ == '__main__':
