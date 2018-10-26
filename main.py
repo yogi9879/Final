@@ -23,14 +23,14 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        test=pd.read_csv(f)
+        data=pd.read_csv(f)
         #SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
         #json_url = os.path.join(SITE_ROOT, 'static', 'finaldata.csv')
         #data =pd.read_csv(open(json_url))
         #data =pd.read_csv(url_for('static', filename="finaldata"))
-        #f.save(secure_filename(f.filename))
+        f.save(secure_filename(f.filename))
         
-        bot=ml1.model_1(test)
+        bot=ml1.model_1(data)
         
         return render_template("result.html",bot=bot)
 
