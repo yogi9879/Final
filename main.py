@@ -4,6 +4,7 @@ from werkzeug import secure_filename
 from werkzeug.datastructures import ImmutableMultiDict
 app = Flask(__name__)
 import sub
+import os
 import numpy
 
 
@@ -17,7 +18,7 @@ def hello_world1():
   if request.method == 'POST':
     
     f = request.files['file']
-    f.save(secure_filename(templates/f.filename))
+    f.save(secure_filename(f.filename))
     return 'file uploaded successfully'
 
 if __name__ == '__main__':
