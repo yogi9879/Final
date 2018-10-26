@@ -15,17 +15,13 @@ def hello_world():
 
 @app.route('/hello', methods = ['POST','GET'])
 def hello_world1():
-  target = os.path.join(app_root, 'static')
-  if not os.path.isdir(target):
-        os.makedirs(target)
+  
   if request.method == 'POST':
     
         f = request.files['file']
-        
-        #file_name = f.filename or ''
-        #destination = '/'.join([target, file_name])
-        #file.save(destination)
+   
         #f.save(secure_filename(f.filename))
+        f.save(os.path.join(app.config['static'], filename))
     return 'file uploaded successfully'
 
 if __name__ == '__main__':
