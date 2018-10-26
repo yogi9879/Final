@@ -5,7 +5,7 @@ import pandas as pd
 def model_1():
          
           data = pd.read_csv("D:\home\site\wwwroot\finaldata.csv")
-
+'''
 
           # Feature Scaling 
           X_train = data.iloc[:,2:8] 
@@ -29,7 +29,7 @@ def model_1():
           for i in range(len(pred)):
              predict1[i] = pred[i]/(1+pred[i])
 
-          cities = data.iloc[:,0]
+          cities = data.iloc[:,0]'''
           return "hi"
           
 
