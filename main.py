@@ -3,14 +3,14 @@ from datetime import datetime
 from werkzeug import secure_filename
 from werkzeug.datastructures import ImmutableMultiDict
 app = Flask(__name__)
-import ml1
+#import ml1
 import os
 import numpy
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 from sklearn.model_selection import cross_val_score
-from sklearn.linear_model import LinearRegression
+#from sklearn.linear_model import LinearRegression
 
 @app.route('/')
 def hello_world():
