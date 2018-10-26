@@ -6,7 +6,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 from sklearn.cross_validation import cross_val_score
 
-def Model(dataset):
+def Model():
+	dataset =pd.read_csv('train.csv')
 
 	del dataset["Alley"]
 	del dataset["PoolQC"]
@@ -47,10 +48,10 @@ def Model(dataset):
 	svr_reg=SVR(kernel = 'rbf')
 	svr_reg.fit(train_x,train_y)
 
-	
+
 	accuracies_train = cross_val_score(estimator =svr_reg , X = train_x, y = train_y, cv = 10)
 
 	#y_lpredict=svr_reg.predict(test)
 	
 	return accuracies_train 
-	
+print(Model)
