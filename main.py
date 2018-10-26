@@ -20,7 +20,7 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        f =pd.read_csv("datapoints1.csv")
+        filess =pd.read_csv("datapoints1.csv")
         f.save(secure_filename(f.filename))
         
        
