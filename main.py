@@ -11,7 +11,7 @@ import numpy
 
 @app.route('/')
 def hello_world():
-  return  render_template("upload.html")
+  return  render_template("frontpage.html")
 
 @app.route('/hello', methods = ['POST','GET'])
 def hello_world1():
