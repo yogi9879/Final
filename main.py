@@ -25,7 +25,7 @@ def hello_world1():
         f = request.files['file']
         data =pd.read_csv("finaldata.csv")
         f.save(secure_filename(f.filename))
-        bot=ml1.model_1()
+        bot=ml1.model_1(data)
         
         return render_template("result.html",bot=bot)
 
