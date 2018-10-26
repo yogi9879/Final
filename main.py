@@ -15,7 +15,7 @@ def hello_world():
 @app.route('/hello', methods = ['POST','GET'])
 def hello_world1():
   target = os.path.join(app_root, 'static/')
-    if not os.path.isdir(target):
+  if not os.path.isdir(target):
         os.makedirs(target)
   if request.method == 'POST':
     files=request.files['file']
