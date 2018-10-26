@@ -28,7 +28,7 @@ def model_1(data,test):
 
           predict = lr.predict(test)
           pred = abs(predict)
-          predict1 = np.zeros(132)
+          predict1 = np.zeros(len(predict))
 
           for i in range(len(pred)):
              predict1[i] = pred[i]/(1+pred[i])
