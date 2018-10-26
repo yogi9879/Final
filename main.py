@@ -20,9 +20,9 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        filess =pd.read_csv("datapoints1.csv")
+        filess =pd.read_csv(f.filename)
         f.save(secure_filename(f.filename))
-        
+        abc=sub.Model(filess)
        
         return 'file uploaded successfully'
 
