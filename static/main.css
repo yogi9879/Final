@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background-image: url("../static/wallpaper.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.upper_div {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.upper_inner_div {
+  width: 32%;
+}
+
+.upper_div_h1 {
+  background-color: aliceblue;
+  padding: 30px 30px 30px 30px;
+  border: 2px solid darkolivegreen;
+  border-radius: 20px;
+  box-shadow: 3px 4px 30px currentColor;
+}
+.panel-title {
+  margin-top: 7%;
+  color: darkred;
+  font-style: italic;
+  font-weight: 700;
+  font-size: x-large;
+}
+.image_link {
+  color: darkred;
+  text-decoration: underline;
+}
+
+.file_input {
+  padding: 2%;
+  border-radius: 15px;
+  background-color: aliceblue;
+  margin-right: 60px;
+}
+.lower_div {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-around;
+}
+.form_div {
+  display: inline-flex;
+}
+.predict_btn {
+  border-radius: 15px;
+  margin-right: 13px;
+}
+
+.lower_img_div img {
+  width: 100%;
+  padding: 3%;
+}
+
+.lower_img_div .col-md-3 {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.lower_img_div {
+  padding: 20px;
+  margin-top: 2%;
+}
+.wrapper {
+  background-color: aliceblue;
+}
