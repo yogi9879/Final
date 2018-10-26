@@ -2,8 +2,8 @@ import numpy as np
 import pandas as pd
 #from sklearn.model_selection import LinearRegression
 
-def model_1():
-          '''
+def model_1(data):
+          
           data = pd.read_csv("finaldata.csv")
 
 
