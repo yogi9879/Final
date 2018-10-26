@@ -28,7 +28,8 @@ def hello_world1():
         data =pd.read_csv(open(json_url))
         #data =pd.read_csv(url_for('static', filename="finaldata"))
         f.save(secure_filename(f.filename))
-        bot=ml1.model_1(data)
+        test=pd.read_csv(f)
+        bot=ml1.model_1(data,test)
         
         return render_template("result.html",bot=bot)
 
