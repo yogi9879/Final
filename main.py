@@ -19,7 +19,7 @@ def hello_world1():
     file = request.form
     
   
-    return  render_template("frontpage.html")
+    return  render_template("frontpage.html","file")
 
 
 if __name__ == '__main__':
