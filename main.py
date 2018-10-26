@@ -6,7 +6,7 @@ app = Flask(__name__)
 import sub
 import os
 import numpy
-import pandas
+import pandas as pd
 
 
 
@@ -22,6 +22,7 @@ def hello_world1():
         f = request.files['file']
         
         f.save(secure_filename(f.filename))
+        f =pd.read_csv(f)
        
         return 'file uploaded successfully'
 
