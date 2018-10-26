@@ -2,6 +2,9 @@ import pandas as pd
 #import matplotlib.pyplot as plt
 import numpy as np
 
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVR
+from sklearn.cross_validation import cross_val_score
 
 def Model(dataset):
 
@@ -25,7 +28,7 @@ def Model(dataset):
 	dataset=dataset.dropna()
 	train_y=dataset.iloc[:,-1]
 	# Feature Scaling
-	from sklearn.preprocessing import StandardScaler
+	
 	sc_X = StandardScaler()
 	sc_y = StandardScaler()
 	#test = sc_X.fit_transform(test)
@@ -40,11 +43,11 @@ def Model(dataset):
 
 
 
-	from sklearn.svm import SVR
+	
 	svr_reg=SVR(kernel = 'rbf')
 	svr_reg.fit(train_x,train_y)
 
-	from sklearn.cross_validation import cross_val_score
+	
 	accuracies_train = cross_val_score(estimator =svr_reg , X = train_x, y = train_y, cv = 10)
 
 	#y_lpredict=svr_reg.predict(test)
