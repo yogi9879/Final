@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 from sklearn.preprocessing import StandardScaler
-#from sklearn.svm import SVR
+from sklearn.svm import SVR
 #from sklearn.cross_validation import cross_val_score
 '''
 def Model(dataset):
