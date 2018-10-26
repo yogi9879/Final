@@ -22,7 +22,7 @@ def hello_world1():
         f = request.files['file']
         filess =pd.read_csv('train.csv')
         f.save(secure_filename(f.filename))
-        abc=sub.Model(filess)
+        #abc=sub.Model(filess)
        
         return 'file uploaded successfully'
 
