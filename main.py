@@ -9,7 +9,7 @@ import numpy
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
-from sklearn.cross_validation import cross_val_score
+from sklearn.model_selection import cross_val_score
 
 
 @app.route('/')
