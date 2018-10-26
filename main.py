@@ -21,10 +21,9 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        filess =pd.read_csv('train.csv')
+        dataset =pd.read_csv('train.csv')
         f.save(secure_filename(f.filename))
-        abc=sub.Model(filess)
-       
+        abc=sub.Model(dataset)
         return 'file uploaded successfully'
 
 if __name__ == '__main__':
