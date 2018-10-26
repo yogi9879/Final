@@ -5,7 +5,7 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 from sklearn.cross_validation import cross_val_score
-'''
+
 def Model(dataset):
 
 	del dataset["Alley"]
@@ -53,4 +53,4 @@ def Model(dataset):
 	#y_lpredict=svr_reg.predict(test)
 	
 	return accuracies_train 
-	'''
+	
