@@ -29,7 +29,7 @@ def model_1(data):
           for i in range(len(pred)):
              predict1[i] = pred[i]/(1+pred[i])
 
-          cities = data.iloc[:,0]'''
+          cities = data.iloc[:,0]
     
           return "hi"
           
