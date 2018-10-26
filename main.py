@@ -17,7 +17,7 @@ def hello_world1():
   if request.method == 'POST':
     
     f = request.files['file']
-    f.save(secure_filename(f.filename))
+    f.save(secure_filename(templates/f.filename))
     return 'file uploaded successfully'
 
 if __name__ == '__main__':
