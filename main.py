@@ -3,7 +3,7 @@ from datetime import datetime
 from werkzeug import secure_filename
 from werkzeug.datastructures import ImmutableMultiDict
 app = Flask(__name__)
-import ML
+import ml1
 import os
 import numpy
 import pandas as pd
@@ -25,7 +25,7 @@ def hello_world1():
         f = request.files['file']
         dataset =pd.read_csv(f)
         f.save(secure_filename(f.filename))
-        bot=ML.model_1()
+        bot=ml1.model_1()
         
         return render_template("result.html",bot=bot)
 
