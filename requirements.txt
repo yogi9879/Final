@@ -1,5 +1,4 @@
 Flask==0.12.1
 numpy==1.11.3
 setuptools==40.4.3
-
-scikit-learn==0.15.2
+scikit-learn-0.20.0
