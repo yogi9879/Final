@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-def model_1(data):
+def model_1(data,test):
           
          # data = pd.read_csv("finaldata.csv")
 
@@ -14,6 +14,10 @@ def model_1(data):
           X_train = X_train.fillna(0)
 
           Y_train = data.iloc[:,-1]
+          
+          for i in range(len(test.columns)):
+             test.iloc[:,i]= test.iloc[:,i]/(np.max(test.iloc[:,i])-np.min(test.iloc[:,i])) - (np.mean(test.iloc[:,i])/(np.max(test.iloc[:,i])-np.min(test.iloc[:,i]))) 
+          test = test.fillna(0)
 
           
 
@@ -22,7 +26,7 @@ def model_1(data):
 
           lr=model.fit(X_train,Y_train)
 
-          predict = lr.predict(X_train)
+          predict = lr.predict(test)
           pred = abs(predict)
           predict1 = np.zeros(132)
 
