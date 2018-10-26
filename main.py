@@ -14,8 +14,15 @@ def hello_world():
 
 @app.route('/hello', methods = ['POST','GET'])
 def hello_world1():
+  target = os.path.join(app_root, 'static/')
+    if not os.path.isdir(target):
+        os.makedirs(target)
   if request.method == 'POST':
-    f=request.files['file']
+    files=request.files['file']
+    file_name = files.filename or ''
+    destination = '/'.join([target, file_name])
+    files.save(destination)
+    
   
     return  render_template("frontpage.html")
 
