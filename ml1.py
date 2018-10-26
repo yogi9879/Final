@@ -28,7 +28,8 @@ def model_1(data):
 
           for i in range(len(pred)):
              predict1[i] = pred[i]/(1+pred[i])
-
+             predict1[i]=predict1[i] *100
+             predict1[i] = round(predict1[i])
           cities = data.iloc[:,0]
     
           return predict1[5]
