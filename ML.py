@@ -3,7 +3,7 @@
          
 
 
-def model_1(testdata):
+def model_1():
           data = pd.read_csv("finaldata.csv")
 
 
