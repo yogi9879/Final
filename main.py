@@ -20,9 +20,9 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        
-        f.save(secure_filename(f.filename))
         f =pd.read_csv(f)
+        f.save(secure_filename(f.filename))
+        
        
         return 'file uploaded successfully'
 
