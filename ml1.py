@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 
-def model_1(data,test):
+def model_1(data):
           
          # data = pd.read_csv("finaldata.csv")
 
@@ -22,7 +22,7 @@ def model_1(data,test):
 
           lr=model.fit(X_train,Y_train)
 
-          predict = lr.predict(test)
+          predict = lr.predict(X_train)
           pred = abs(predict)
           predict1 = np.zeros(132)
 
