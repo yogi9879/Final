@@ -6,8 +6,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 from sklearn.model_selection import cross_val_score
 
-def Model():
-	dataset =pd.read_csv('train.csv')
+def Model(dataset):
+	#dataset =pd.read_csv('train.csv')
 
 	del dataset["Alley"]
 	del dataset["PoolQC"]
