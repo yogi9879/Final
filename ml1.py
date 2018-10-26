@@ -26,7 +26,7 @@ def model_1(data,test):
 
           lr=model.fit(X_train,Y_train)
 
-          predict = lr.predict(test)
+          predict = lr.predict(X_train)
           pred = abs(predict)
           predict1 = np.zeros(len(predict))
 
