@@ -22,9 +22,9 @@ def hello_world1():
     
         f = request.files['file']
         
-        file_name = f.filename or ''
-        destination = '/'.join([target, file_name])
-        file.save(destination)
+        #file_name = f.filename or ''
+        #destination = '/'.join([target, file_name])
+        #file.save(destination)
         #f.save(secure_filename(f.filename))
     return 'file uploaded successfully'
 
