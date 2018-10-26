@@ -16,7 +16,7 @@ def hello_world():
 def hello_world1():
   if request.method == 'POST':
     
-    file = request.files['u_img']
+    file = request.form
     
   
     return  render_template("frontpage.html")
