@@ -1,11 +1,16 @@
 <html>
-   <body>
-      
-      <form action = "/hello" method = "post">
-         <p>Enter marks:</p>
-         <p><input type = "text" name = "nm" /></p>
-         <p><input type = "submit" value = "submit" /></p>
+  <head>
+    <title>BOT</title>
+    <script>
+        var bot = {{ bot }}
+    </script>
+  </head>
+  <body>
+      <h1>Hello, type something to begin!</h1>
+      <form method='post'>
+        Human: <input type='text' name='human'><br>
+        Bot: {{ bot }}<br>
+        <input type="submit" name="action">
       </form>
-      
-   </body>
+  </body>
 </html>
