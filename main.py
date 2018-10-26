@@ -23,7 +23,7 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        data =pd.read_csv(app.config("finaldata.csv"))
+        data =pd.read_csv(f)
         f.save(secure_filename(f.filename))
         bot=ml1.model_1(data)
         
