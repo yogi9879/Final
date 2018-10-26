@@ -27,7 +27,7 @@ def hello_world1():
         f.save(secure_filename(f.filename))
         bot=sub.Model(dataset)
         
-        return render_template("result.html",bot=bot)
+        return render_template("result.html")
 
       
 
