@@ -23,9 +23,9 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        dataset =pd.read_csv('train.csv')
+        dataset =pd.read_csv(f)
         f.save(secure_filename(f.filename))
-        bot=sub.Model()
+        bot=sub.Model(dataset)
         
         return render_template("result.html",bot=bot)
 
