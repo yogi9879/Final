@@ -1,6 +1,6 @@
 import numpy as np
 import pandas as pd
-#from sklearn.model_selection import LinearRegression
+from sklearn.linear_model import LinearRegression
 
 def model_1(data):
           
