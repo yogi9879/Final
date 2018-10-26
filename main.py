@@ -12,11 +12,12 @@ app = Flask(__name__)
 def hello_world():
   return  render_template("frontpage.html")
 
-@app.route('/hello', methods = ['GET', 'POST'])
+@app.route('/hello', methods = ['POST','GET'])
 def hello_world1():
-  #f= = request.files['file']
+  if request.method == 'POST':
+    f= = request.files['file']
   
-  return  render_template("frontpage.html")
+    return  render_template("frontpage.html")
 
 
 if __name__ == '__main__':
