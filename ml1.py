@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def model_1():
-          
+          '''
           data = pd.read_csv("finaldata.csv")
 
 
@@ -30,7 +30,7 @@ def model_1():
           for i in range(len(pred)):
              predict1[i] = pred[i]/(1+pred[i])
 
-          cities = data.iloc[:,0]
+          cities = data.iloc[:,0]'''
           return "hi"
           
 
