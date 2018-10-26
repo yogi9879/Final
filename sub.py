@@ -1,6 +1,7 @@
 import pandas as pd
 #import matplotlib.pyplot as plt
 import numpy as np
+'''
 
 def Model(dataset):
 
@@ -48,4 +49,4 @@ def Model(dataset):
 
 	#y_lpredict=svr_reg.predict(test)
 	
-	return accuracies_train
+	return accuracies_train '''
