@@ -35,7 +35,7 @@ def model_1(data,test):
 
           cities = data.iloc[:,0]
     
-          return predict
+          return "hi"
           
 
           
