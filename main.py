@@ -20,7 +20,7 @@ def hello_world1():
   if request.method == 'POST':
     
         f = request.files['file']
-        #filess =pd.read_csv(f.filename)
+        filess =pd.read_csv('train.csv')
         f.save(secure_filename(f.filename))
         #abc=sub.Model(filess)
        
