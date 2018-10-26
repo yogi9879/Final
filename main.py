@@ -14,7 +14,7 @@ from sklearn.model_selection import cross_val_score
 
 @app.route('/')
 def hello_world():
-  return  render_template("frontpage.html")
+  return  render_template("index.html")
 
 @app.route('/hello', methods = ['POST','GET'])
 
