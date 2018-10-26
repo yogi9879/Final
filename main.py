@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-  return  render_template("frontpage.html")
+  return  render_template("upload.html")
 
 @app.route('/hello', methods = ['POST','GET'])
 def hello_world1():
