@@ -4,7 +4,7 @@ import pandas as pd
 
 def model_1():
          
-          data = pd.read_csv("finaldata.csv")
+          data = pd.read_csv("D:\home\site\wwwroot\finaldata.csv")
 
 
           # Feature Scaling 
