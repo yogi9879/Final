@@ -21,7 +21,7 @@ def hello_world1():
         f = request.files['file']
         
        # f.save(secure_filename(f.filename))
-        f.save(os.path.join(app.config['static'], secure_filename(f.filename)))
+        f.save(os.path.join(app.config['/static'], secure_filename(f.filename)))
         return 'file uploaded successfully'
 
 if __name__ == '__main__':
