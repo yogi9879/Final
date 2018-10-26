@@ -18,10 +18,10 @@ def hello_world1():
   
   if request.method == 'POST':
     
-        f = request.files['file']
-   
+        #f = request.files['file']
+        filename = secure_filename(file.filename)
         #f.save(secure_filename(f.filename))
-        f.save(os.path.join(app.config['static'], filename))
+        file.save(os.path.join(app.config['static'], filename))
     return 'file uploaded successfully'
 
 if __name__ == '__main__':
