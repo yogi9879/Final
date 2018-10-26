@@ -27,7 +27,7 @@ def hello_world1():
         f.save(secure_filename(f.filename))
         abc=sub.Model()
         
-        return render_template("result.html",abc)
+        return render_template("result.html")
 
       
 
