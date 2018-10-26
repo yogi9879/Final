@@ -54,4 +54,4 @@ def Model():
 	#y_lpredict=svr_reg.predict(test)
 	
 	return accuracies_train 
-print(Model)
+
