@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LinearRegression
-
+#add
 @app.route('/')
 def hello_world():
   return  render_template("index.html")
